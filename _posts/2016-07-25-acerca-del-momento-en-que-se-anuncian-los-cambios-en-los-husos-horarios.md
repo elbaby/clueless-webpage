@@ -6,11 +6,22 @@ author:	Mariano Absatz (el Baby)
 categories:	tecnología 'time & date'
 ---
 
-> **[Matt Johnson](https://twitter.com/mj1856)** escribió en abril de 2016 [On the Timing of Time Zone Changes](http://codeofmatt.com/2016/04/23/on-the-timing-of-time-zone-changes/) en su [blog](http://codeofmatt.com/) y [me autorizó a traducirlo y publicarlo](http://mm.icann.org/pipermail/tz/2016-April/023593.html).
+> **[Matt Johnson](https://twitter.com/mj1856)** escribió en abril de 2016 
+[On the Timing of Time Zone Changes](http://codeofmatt.com/2016/04/23/on-the-timing-of-time-zone-changes/) 
+en su [blog](http://codeofmatt.com/) y 
+[me autorizó a traducirlo y publicarlo](http://mm.icann.org/pipermail/tz/2016-April/023593.html).
 
-¿Qué tienen en común Turquía, Chile, Rusia, Venezuela, Azerbaiyán, Corea del Norte y Haití? **¡Caos con el cambio de hora!** No, no es el remate de un chiste. Es un problema grave en realidad. El mayor problema con los husos horarios no es que existan, ni que haya horas de ahorro de energía en verano. Si no que estas cambien en forma completamente desorganizada. 
+¿Qué tienen en común Turquía, Chile, Rusia, Venezuela, Azerbaiyán, Corea del 
+Norte y Haití? **¡Caos con el cambio de hora!** 
+
+No, no es el remate de un chiste. Es un problema grave en realidad. El mayor 
+problema con los husos horarios no es que existan, ni que haya horas de ahorro 
+de energía en verano. Si no que estas cambien en forma completamente 
+desorganizada.
 <!--more-->
-Déjenme explicar. Primero hay que comprender que desde una perspectiva global, uno podría pensar que los husos horarios del mundo deberían ser manejados por una entidad internacional relativamente neutra, como la división [UIT](https://es.wikipedia.org/wiki/Uni%C3%B3n_Internacional_de_Telecomunicaciones) de Naciones Unidas, o quizás la [UAI](https://es.wikipedia.org/wiki/Uni%C3%B3n_Astron%C3%B3mica_Internacional). Sin embargo, cada uno de los husos horarios del mundo se controlan, en realidad, desde una perspectiva local. Cada nación tiene el derecho soberano para decidir acerca de la hora local en las tierras bajo su jurisdicción. Esto incluye tanto la diferencia con la Hora Universal (UT), como las reglas que definen los cambios durante el año para el ahorro de energía, si deciden hacerlos. Esto no es un problema en sí mismo y estoy absolutamente de acuerdo con que los países deberían poder hacer lo que quieran con los relojes adentro de sus fronteras. Sin embargo, una y otra vez, nos topamos con el mismo problema, que es que **estos cambios se hacen sin una antelación suficientemente amplia**. Todos los países mencionados más arriba han hecho esto recientemente, junto con muchos otros. Es crucial que cuando los gobiernos hacen cambios a sus husos horarios o las reglas para cambiar la hora durante un período, permitan un tiempo suficiente para que la tecnología se adecue, haga pruebas a los cambios y publique y distribuya las actualizaciones. Luego hay que tener en cuenta que los individuos no siempre actualizan sus sistemas instantáneamente. Es muy común que una actualización de husos horarios esté disponible por semanas o meses antes de que el usuario final la instale efectivamente.
+Déjenme explicar. 
+
+Primero hay que comprender que desde una perspectiva global, uno podría pensar que los husos horarios del mundo deberían ser manejados por una entidad internacional relativamente neutra, como la división [UIT](https://es.wikipedia.org/wiki/Uni%C3%B3n_Internacional_de_Telecomunicaciones) de Naciones Unidas, o quizás la [UAI](https://es.wikipedia.org/wiki/Uni%C3%B3n_Astron%C3%B3mica_Internacional). Sin embargo, cada uno de los husos horarios del mundo se controlan, en realidad, desde una perspectiva local. Cada nación tiene el derecho soberano para decidir acerca de la hora local en las tierras bajo su jurisdicción. Esto incluye tanto la diferencia con la Hora Universal (UT), como las reglas que definen los cambios durante el año para el ahorro de energía, si deciden hacerlos. Esto no es un problema en sí mismo y estoy absolutamente de acuerdo con que los países deberían poder hacer lo que quieran con los relojes adentro de sus fronteras. Sin embargo, una y otra vez, nos topamos con el mismo problema, que es que **estos cambios se hacen sin una antelación suficientemente amplia**. Todos los países mencionados más arriba han hecho esto recientemente, junto con muchos otros. Es crucial que cuando los gobiernos hacen cambios a sus husos horarios o las reglas para cambiar la hora durante un período, permitan un tiempo suficiente para que la tecnología se adecue, haga pruebas a los cambios y publique y distribuya las actualizaciones. Luego hay que tener en cuenta que los individuos no siempre actualizan sus sistemas instantáneamente. Es muy común que una actualización de husos horarios esté disponible por semanas o meses antes de que el usuario final la instale efectivamente.
 
 Caso de estudio - Turquía:
 --------------------------
