@@ -7,9 +7,9 @@ categories:	tecnología 'time & date'
 ---
 
 > **[Matt Johnson](https://twitter.com/mj1856)** escribió en abril de 2016
-[On the Timing of Time Zone Changes](http://codeofmatt.com/2016/04/23/on-the-timing-of-time-zone-changes/)
-en su [blog](http://codeofmatt.com/) y
-[me autorizó a traducirlo y publicarlo](http://mm.icann.org/pipermail/tz/2016-April/023593.html).
+[On the Timing of Time Zone Changes](https://codeofmatt.com/on-the-timing-of-time-zone-changes/)
+en su [blog](https://codeofmatt.com/) y
+[me autorizó a traducirlo y publicarlo](https://mm.icann.org/pipermail/tz/2016-April/023593.html).
 
 ¿Qué tienen en común Turquía, Chile, Rusia, Venezuela, Azerbaiyán, Corea del
 Norte y Haití? **¡Caos con el cambio de hora!**
@@ -31,29 +31,29 @@ Es crucial que cuando los gobiernos hacen cambios a sus husos horarios o las reg
 Caso de estudio - Turquía:
 --------------------------
 
-Tomemos a Turquía como ejemplo. En 2015 el gobierno decidió que sería una buena idea [retrasar dos semanas la finalización del cambio de hora para ahorro de energía](http://www.timeanddate.com/news/time/turkey-delays-dst-end-2015.html) para permitir más horas de luz diurna durante las elecciones. Movieron la fecha de finalización de DST (cambio de hora para ahorro de energía) del 25 de octubre al 8 de noviembre.
+Tomemos a Turquía como ejemplo. En 2015 el gobierno decidió que sería una buena idea [retrasar dos semanas la finalización del cambio de hora para ahorro de energía](https://www.timeanddate.com/news/time/turkey-delays-dst-end-2015.html) para permitir más horas de luz diurna durante las elecciones. Movieron la fecha de finalización de DST (cambio de hora para ahorro de energía) del 25 de octubre al 8 de noviembre.
 
-*   Lo primero que se supo acerca de esto fue a través de una [nota periodística no oficial](http://www.sozcu.com.tr/2015/gunun-icinden/saatler-ne-zaman-geri-alinacak-yaz-saati-uygulamasi-ne-zaman-bitecek-930383/) publicada el 8 de septiembre, alrededor de 6 semanas antes de que se debieran cambiar los relojes. Sin embargo, el artículo recién fue registrado por la comunidad TZ alrededor del 19 de septiembre. Es difícil basarse solamente en notas periodísticas, ya que muchas veces son confusos o contienen errores. Unas pocas palabras de un político a un periodista simplemente no son suficiente.
+*   Lo primero que se supo acerca de esto fue a través de una [nota periodística no oficial](https://www.sozcu.com.tr/2015/gunun-icinden/saatler-ne-zaman-geri-alinacak-yaz-saati-uygulamasi-ne-zaman-bitecek-930383/) publicada el 8 de septiembre, alrededor de 6 semanas antes de que se debieran cambiar los relojes. Sin embargo, el artículo recién fue registrado por la comunidad TZ alrededor del 19 de septiembre. Es difícil basarse solamente en notas periodísticas, ya que muchas veces son confusos o contienen errores. Unas pocas palabras de un político a un periodista simplemente no son suficiente.
 
-*   El 29 de septiembre, una agencia del gobierno [también reportó el cambio](http://aa.com.tr/tr/turkiye/yaz-saati-uygulamasi-8-kasimda-sona-erecek/362217). Todavía no era _completamente_ oficial, ya que no hacía referencia a ningún tipo de decreto o legislación. Pero era suficiente para convencer a algunos en la comunidad TZ de que era real y por lo tanto se comenzó a configurar un cambio en la [IANA TZ database](https://es.wikipedia.org/wiki/TZ_Database) y [se publicó unos días después, el 1° de octubre](http://mm.icann.org/pipermail/tz-announce/2015-October/000034.html).
+*   El 29 de septiembre, una agencia del gobierno [también reportó el cambio](https://www.aa.com.tr/tr/turkiye/yaz-saati-uygulamasi-8-kasimda-sona-erecek/362217). Todavía no era _completamente_ oficial, ya que no hacía referencia a ningún tipo de decreto o legislación. Pero era suficiente para convencer a algunos en la comunidad TZ de que era real y por lo tanto se comenzó a configurar un cambio en la [IANA TZ database](https://es.wikipedia.org/wiki/TZ_Database) y [se publicó unos días después, el 1° de octubre](https://mm.icann.org/pipermail/tz-announce/2015-October/000034.html).
 
-*   El anuncio definitivo del gobierno finalmente salió el 4 de octubre cuando se publicó [en la Gaceta Oficial](http://www.resmigazete.gov.tr/eskiler/2015/10/20151004-1.htm). Esto es alrededor de tres semanas de antelación _oficial_ de la propuesta de cambio.
+*   El anuncio definitivo del gobierno finalmente salió el 4 de octubre cuando se publicó [en la Gaceta Oficial](https://www.resmigazete.gov.tr/eskiler/2015/10/20151004-1.htm). Esto es alrededor de tres semanas de antelación _oficial_ de la propuesta de cambio.
 
 *   Muchos proveedores de tecnología, incluyendo a los grandes como Apple, Google y Oracle, tomaron los datos de IANA y los publicaron a través de sus propios canales. Por ejemplo, Apple lo lanzó para dispositivos iPhone y iPad con la actualización iOS 9.1 el 21 de octubre, dejando sólo 3 días para que los usuarios instalen la actualización para evitar que sus relojes cambien la hora el día incorrecto.
 
 *   Para Microsoft Windows que sigue un procedimiento levemente diferente y requiere de un mayor grado de confirmación, [se hizo un anuncio el 9 de octubre](https://blogs.technet.microsoft.com/dst2007/2015/10/09/upcoming-windows-dst-update-for-turkey-democratic-peoples-republic-of-korea-and-fiji/) y [se publicó la actualización el 20 de octubre](https://support.microsoft.com/kb/3093503).
 
-*   En algunos casos, la fecha se pasó por completo, como en el caso de [pytz](https://pypi.python.org/pypi/pytz) - la popular biblioteca de manejo de husos horarios para el lenguaje Python, que publicó su versión 2015.7 el 26 de octubre.
+*   En algunos casos, la fecha se pasó por completo, como en el caso de [pytz](https://pypi.org/project/pytz/) - la popular biblioteca de manejo de husos horarios para el lenguaje Python, que publicó su versión 2015.7 el 26 de octubre.
 
-Entonces ¿cuál fue el resultado? Bueno, [citando a la BBC](http://www.bbc.com/news/world-europe-34631326):
+Entonces ¿cuál fue el resultado? Bueno, [citando a la BBC](https://www.bbc.com/news/world-europe-34631326):
 
 > Turcos confundidos se preguntan "¿qué hora es?" luego de que los relojes automáticos desafiaran una decisión del gobierno para posponer el cambio de hora estacional.
 
-O como [reportó el IBT](http://www.ibtimes.co.uk/what-time-it-now-turkeys-clocks-defy-time-change-confuse-millions-people-1525625):
+O como [reportó el IBT](https://www.ibtimes.co.uk/what-time-it-now-turkeys-clocks-defy-time-change-confuse-millions-people-1525625):
 
 > Millones de turcos se despertaron en una mañana confusa el domingo ... ya que teléfonos inteligentes, tabletas, y computadoras habían cambiado la hora automáticamente del mismo modo que otros países en el huso horario de Europa Occidental (_Eastern European Time zone_), aun cuando Turquía retrasó el cambio de hora para dos semanas más adelante.
 
-Como se podrán imaginar, esto tuvo en la votación exactamente el efecto opuesto a lo que el gobierno había intentado lograr. Sin embargo, podrían haberlo previsto ya que ¡pasó exactamente lo mismo el año anterior! como [lo reportó la Agencia de Noticias Independientes de los Balcanes en 2014](http://www.balkaneu.com/eventful-elections-turkey/):
+Como se podrán imaginar, esto tuvo en la votación exactamente el efecto opuesto a lo que el gobierno había intentado lograr. Sin embargo, podrían haberlo previsto ya que ¡pasó exactamente lo mismo el año anterior! como [lo reportó la Agencia de Noticias Independientes de los Balcanes en 2014](https://balkaneu.com/eventful-elections-turkey/):
 
 > Una increíble confusión para 52,9 millones de votantes turcos fue causada por la decisión del gobierno turco de posponer por un día el cambio de hora que se aplica en todo el mundo, cuando los relojes se adelantan una hora. La razón para posponer la aplicación de la hora de verano según el gobierno de Erdogan, fue para facilitar la administración de las elecciones, pero nadie predijo el factor de la "nueva tecnología". Todos los teléfonos inteligentes de los ciudadanos turcos cambiaron la hora automáticamente, resultando en miles de votantes que fueron a a votar más temprano y tuvieron que esperar hasta una hora para poder hacerlo. 
 
@@ -103,7 +103,7 @@ Si vas a hacer cambios en tu(s) huso(s) horario(s), ya sea para la distancia de 
 
 4.  Notificá a tus ciudadanos a través de comunicados de prensa y los medios de noticias, pero no cuentes sólo con esto para comunicar el cambio. El decreto o ley oficial debería estar por encima de cualquier declaración hecha a la prensa.
 
-5.  Enviá notificaciones a la comunidad TZ. Para hacer esto, sólo tenés que mandar un mail a [tz@iana.org](mailto:tz@iana.org) que es la dirección de la [lista de discusión tz](http://www.iana.org/time-zones). El mail debería contener un URL para el anuncio publicado en un sitio web oficial del gobierno.
+5.  Enviá notificaciones a la comunidad TZ. Para hacer esto, sólo tenés que mandar un mail a [tz@iana.org](mailto:tz@iana.org) que es la dirección de la [lista de discusión tz](https://www.iana.org/time-zones). El mail debería contener un URL para el anuncio publicado en un sitio web oficial del gobierno.
 
 6.  Si se aborta la decisión de realizar el cambio, por favor da aviso de esto también con mucha anticipación.
 
@@ -121,11 +121,11 @@ Recomendaciones para desarrolladores de software
 
 4.  Estate al tanto de las actualizaciones de los husos horarios. Asegurate de saber como mantenerlos actualizados utilizando los mecanismos de tu plataforma o biblioteca.
 
-5.  Suscribite a la [lista de correo de anuncios de TZ](http://www.iana.org/time-zones), así sabés cuando está disponible cada actulización de los datos.
+5.  Suscribite a la [lista de correo de anuncios de TZ](https://www.iana.org/time-zones), así sabés cuando está disponible cada actulización de los datos.
 
-6.  Si sabés de un cambio que está por ocurrir en un huso horario en un área en particular que difiere de la información conocida actualmente, o si tenés otras preguntas acerca del husos horarios en computación, unite a la [lista de correo electrónico de discusión de TZ](http://www.iana.org/time-zones).
+6.  Si sabés de un cambio que está por ocurrir en un huso horario en un área en particular que difiere de la información conocida actualmente, o si tenés otras preguntas acerca del husos horarios en computación, unite a la [lista de correo electrónico de discusión de TZ](https://www.iana.org/time-zones).
 
-7.  Usá [timeanddate.com](http://timeanddate.com/) para validar cualquier suposición que tengas acerca de los husos horarios para una región en particular. La precisión de este sitio en particular ha sido bien establecida y sus propietarios participan en la comunidad TZ.
+7.  Usá [timeanddate.com](https://www.timeanddate.com/) para validar cualquier suposición que tengas acerca de los husos horarios para una región en particular. La precisión de este sitio en particular ha sido bien establecida y sus propietarios participan en la comunidad TZ.
 
 8.  Para Windows, .NET y otros productos de Microsoft, seguí el canal de noticias de [este sitio](https://support.microsoft.com/gp/cp_dst) para saber cuándo están disponibles las actualizaciones de la plataforma. (Aunque deberías preferir los husos horarios de IANA cuando sea posible, aun si implica que tenés que utilizar una biblioteca para hacerlo).
 
